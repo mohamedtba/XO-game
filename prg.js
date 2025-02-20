@@ -46,6 +46,9 @@ if(squares[1]===squares[4] && squares[4]===squares[7] &&squares[7]!=''){
 }
 if(squares[2]===squares[5] && squares[5]===squares[8] &&squares[8]!=''){
     title.innerHTML=`winner is ${squares[2]}`;
+     document.getElementById('s2').style.background='#000000'
+    document.getElementById('s5').style.background='#000000'
+    document.getElementById('s8').style.background='#000000'
     setInterval(function(){title.innerHTML+='.'},500)
     setTimeout(function(){location.reload()},1000)
 
